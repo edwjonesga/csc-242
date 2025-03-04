@@ -95,7 +95,7 @@ This midterm exam tests your understanding of object-oriented programming concep
 * Be sure to make use of the available classes and functionality.
 * Ensure that a Square is also a Shape.
 
-* 5 Additional points for clean tidy code
+**5 Additional points for clean tidy code**
 
 ## Downloading, Unzipping, and Running the Assignment
 ### Step 1: Download the assignment ZIP file from your course portal.
