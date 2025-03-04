@@ -17,7 +17,7 @@ This midterm exam tests your understanding of object-oriented programming concep
 
 ## Classes and Interfaces
 
-**1. `BankAccount` Class:**
+**1. `BankAccount` Class:** (10 points)
 
 * Represents a bank account with an account number, account holder, and balance.
 * Implement methods to:
@@ -26,7 +26,7 @@ This midterm exam tests your understanding of object-oriented programming concep
     * Retrieve the current balance.
 * Ensure that withdrawals cannot exceed the available balance.
 
-**2. `Book` Class:**
+**2. `Book` Class:** (10 points)
 
 * Represents a book with a title, author, ISBN, and availability status.
 * Implement methods to:
@@ -34,7 +34,7 @@ This midterm exam tests your understanding of object-oriented programming concep
     * Return the book.
 * Ensure that books cannot be checked out if they are already unavailable.
 
-**3. `Library` Class:**
+**3. `Library` Class:** (15 points)
 
 * Manages a collection of `Book` objects.
 * Implement methods to:
@@ -42,58 +42,60 @@ This midterm exam tests your understanding of object-oriented programming concep
     * Return a specific book.
     * List all available books in the library.
 
-**4. `Product` Class:**
+**4. `Product` Class:** (10 points)
 
 * Represents a product with a name, price, and category.
 * Implement a method to:
     * Retrieve the product's info i.e. name, price, and category.
 
-**5. `Electronics` Class:**
+**5. `Electronics` Class:** (20 points)
 
 * Represents an electronic product.
 * Add an attribute for warranty period.
 * Extend the `Product` class.
 * Override the method to retrieve product info, including the warranty period.
 
-**6. `Clothing` Class:**
+**6. `Clothing` Class:** (20 points)
 
 * Represents a clothing product.
 * Add an attribute for size.
 * Extend the `Product` class.
 * Override the method to retrieve product details, including the size.
 
-**7. `PaymentProcessor` Interface:**
+**7. `PaymentProcessor` Interface:** (15 points)
 
 * Define a method to:
     * Process a payment.
 
-**8. `CreditCardPayment` Class:**
+**8. `CreditCardPayment` Class:** (20 points)
 
 * Implement the `PaymentProcessor` interface.
 * Implement the method to process a payment, printing a message indicating that payment has been processed via credit card.
 
-**9. `PayPalPayment` Class:**
+**9. `PayPalPayment` Class:** (20 points)
 
 * Implement the `PaymentProcessor` interface.
 * Implement the method to process a payment, printing a message indicating that payment has been processed via PayPal.
 
-**10. `Shape` Interface:**
+**10. `Shape` Interface:** (15 points)
 
 * Define a method to:
     * Calculate the area of the shape.
 
-**11. `Rectangle` Class:**
+**11. `Rectangle` Class:** (20 points)
 
 * Represents a rectangle with length and width.
 * Implement a constructor to set length and width.
 * Ensure that a rectangle is a Shape.
 
-**12. `Square` Class:**
+**12. `Square` Class:** (20 points)
 
 * Represents a square with a side length.
 * Implement a constructor to set the side length.
 * Be sure to make use of the available classes and functionality.
 * Ensure that a Square is also a Shape.
+
+* 5 Additional points for clean tidy code
 
 ## Downloading, Unzipping, and Running the Assignment
 ### Step 1: Download the assignment ZIP file from your course portal.
