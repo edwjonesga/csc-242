@@ -9,11 +9,11 @@ This midterm exam tests your understanding of object-oriented programming concep
 
 1.  **Read Carefully:** Read each class and interface description thoroughly before starting to implement any code.
 2.  **Implement All Required Functionality:** Ensure that all methods and attributes specified in the class descriptions are implemented.
-3.  **Follow Best Practices:** Adhere to good coding practices, including meaningful variable names, proper indentation, and clear comments.
+3.  **Follow Best Practices:** Adhere to good coding practices, including meaningful variable names, proper indentation, and clear comments, encapsulation, polymorphism.
 4.  **Testing:** While not explicitly required, you are strongly encouraged to test your code to ensure it functions as expected.
-6.  **Focus on Core Concepts:** The primary focus of this exam is to demonstrate your understanding of object-oriented principles.
-7.  **Implement the Interface:** Implement the methods described in the interface.
-8.  **Extend the Class:** Extend the classes as described.
+5.  **Focus on Core Concepts:** The primary focus of this exam is to demonstrate your understanding of object-oriented principles.
+6.  **Implement Interfaces:** Implement the methods described in the interfaces.
+7.  **Extend Classes:** Extend classes where appropriate.
 
 ## Classes and Interfaces
 
@@ -21,77 +21,79 @@ This midterm exam tests your understanding of object-oriented programming concep
 
 * Represents a bank account with an account number, account holder, and balance.
 * Implement methods to:
-    * `deposit(double amount)`: Deposit money into the account.
-    * `withdraw(double amount)`: Withdraw money from the account.
-    * `getBalance()`: Retrieve the current balance.
+    * Deposit money into the account.
+    * Withdraw money from the account.
+    * Retrieve the current balance.
 * Ensure that withdrawals cannot exceed the available balance.
 
 **2. `Book` Class:**
 
 * Represents a book with a title, author, ISBN, and availability status.
 * Implement methods to:
-    * `checkOut()`: Check out the book.
-    * `returnBook()`: Return the book.
+    * Check out the book.
+    * Return the book.
 * Ensure that books cannot be checked out if they are already unavailable.
 
 **3. `Library` Class:**
 
 * Manages a collection of `Book` objects.
 * Implement methods to:
-    * `checkOutBook(Book book)`: Check out a specific book.
-    * `returnBook(Book book)`: Return a specific book.
-    * `listAvailableBooks()`: List all available books in the library.
+    * Check out a specific book.
+    * Return a specific book.
+    * List all available books in the library.
 
 **4. `Product` Class:**
 
 * Represents a product with a name, price, and category.
-* Implement a method:
-    * `printProductDetails()`: Print the product's name, price, and category.
+* Implement a method to:
+    * Retrieve the product's info i.e. name, price, and category.
 
 **5. `Electronics` Class:**
 
 * Represents an electronic product.
 * Add an attribute for warranty period.
 * Extend the `Product` class.
-* Override the `printProductDetails()` method to include the warranty period.
+* Override the method to retrieve product info, including the warranty period.
 
 **6. `Clothing` Class:**
 
 * Represents a clothing product.
 * Add an attribute for size.
 * Extend the `Product` class.
-* Override the `printProductDetails()` method to include the size.
+* Override the method to retrieve product details, including the size.
 
 **7. `PaymentProcessor` Interface:**
 
-* Define a method:
-    * `processPayment(double amount)`: Process a payment.
+* Define a method to:
+    * Process a payment.
 
 **8. `CreditCardPayment` Class:**
 
-* Implements the `PaymentProcessor` interface.
-* Implement the `processPayment()` method to print a message indicating that payment has been processed via credit card.
+* Implement the `PaymentProcessor` interface.
+* Implement the method to process a payment, printing a message indicating that payment has been processed via credit card.
 
 **9. `PayPalPayment` Class:**
 
-* Implements the `PaymentProcessor` interface.
-* Implement the `processPayment()` method to print a message indicating that payment has been processed via PayPal.
+* Implement the `PaymentProcessor` interface.
+* Implement the method to process a payment, printing a message indicating that payment has been processed via PayPal.
 
 **10. `Shape` Interface:**
 
-* Define a method:
-    * `calculateArea()`: Calculate the area of the shape.
+* Define a method to:
+    * Calculate the area of the shape.
 
 **11. `Rectangle` Class:**
 
 * Represents a rectangle with length and width.
 * Implement a constructor to set length and width.
-* Implement the `Shape` interface and the `calculateArea()` method.
+* Ensure that a rectangle is a Shape.
 
 **12. `Square` Class:**
 
 * Represents a square with a side length.
-* Be sure to make use of the available classes and functionalty
+* Implement a constructor to set the side length.
+* Be sure to make use of the available classes and functionality.
+* Ensure that a Square is also a Shape.
 
 ## Downloading, Unzipping, and Running the Assignment
 ### Step 1: Download the assignment ZIP file from your course portal.
