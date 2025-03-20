@@ -45,7 +45,7 @@ public class MainTest {
         eventManager.notifyObservers(HomeEvent.MOTION_DETECTED);
         
         // TODO: Verify expected behavior after event notification
-        // assertTrue(testObserver.hasReceivedEvent(), "Observer should have received an event");
+        assertTrue(testObserver.hasReceivedEvent(), "Observer should have received an event");
     }
     
     @Test
