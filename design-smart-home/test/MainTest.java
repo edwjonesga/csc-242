@@ -4,6 +4,7 @@ import java.util.List;
 
 public class MainTest {
     
+    private boolean eventReceived = false;
     @Test
     public void testSingletonHomeController() {
         SmartHomeRepository repo1 = new SmartHomeRepository();
@@ -29,23 +30,19 @@ public class MainTest {
         SmartHomeEventManager eventManager = new SmartHomeEventManager();
         
         SmartHomeObserver testObserver = new SmartHomeObserver() {
-            private boolean eventReceived = false;
             
             @Override
             public void onEvent(HomeEvent event) {
                 eventReceived = true;
             }
             
-            public boolean hasReceivedEvent() {
-                return eventReceived;
-            }
         };
-        
+        eventReceived = false;
         eventManager.addObserver(testObserver);
         eventManager.notifyObservers(HomeEvent.MOTION_DETECTED);
         
         // TODO: Verify expected behavior after event notification
-        assertTrue(testObserver.hasReceivedEvent(), "Observer should have received an event");
+        assertTrue(eventReceived, "Observer should have received an event");
     }
     
     @Test
