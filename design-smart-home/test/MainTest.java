@@ -60,7 +60,7 @@ public class MainTest {
     @Test
     public void testUsageTrackerPowerableDevice() {
         SmartLight light = new SmartLight("Test Light");
-        UsageTrackerPowerableDevice trackedLight = new UsageTrackerPowerableDevice(light);
+        SmartLightUsageTracker trackedLight = new SmartLightUsageTracker(light);
         
         trackedLight.turnOn();
         // Simulate time passing
